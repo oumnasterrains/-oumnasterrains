@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agence Immobilière Oumnas</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#173b2b;background:#f7f5ef}
+a{text-decoration:none;color:inherit}
+.container{width:92%;max-width:1150px;margin:auto}
+
+header{
+background:#123526;color:white;
+padding:18px 0;
+}
+.nav{
+display:flex;justify-content:space-between;align-items:center;
+}
+.logo{
+font-size:21px;font-weight:bold;
+}
+.logo span{
+display:block;color:#d5b467;font-size:11px;
+letter-spacing:2px;margin-top:4px;
+}
+
+nav{display:flex;gap:22px;font-size:14px}
+nav a:hover{color:#d5b467}
+
+.btn{
+display:inline-block;
+background:#d2b15f;
+color:#14291e;
+padding:13px 20px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.hero{
+min-height:570px;
+display:flex;
+align-items:center;
+color:white;
+background:
+linear-gradient(90deg,rgba(10,40,27,.9),rgba(10,40,27,.45)),
+url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85")
+center/cover;
+}
+
+.hero-content{max-width:700px}
+.hero small{
+color:#d7b96e;
+letter-spacing:3px;
+text-transform:uppercase;
+font-weight:bold;
+}
+.hero h1{
+font-family:Georgia,serif;
+font-size:clamp(42px,7vw,70px);
+line-height:1.05;
+margin:18px 0;
+}
+.hero p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:30px;
+color:#edf2ee;
+}
+
+section{padding:75px 0}
+.title{text-align:center;margin-bottom:40px}
+.title h2{
+font-family:Georgia,serif;
+font-size:38px;
+}
+.title p{color:#69756e;margin-top:8px}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 8px 25px #0001;
+}
+.card img{
+width:100%;height:220px;object-fit:cover;
+}
+.card-content{padding:20px}
+.card small{
+color:#a18442;
+font-weight:bold;
+text-transform:uppercase;
+}
+.card h3{
+font-family:Georgia,serif;
+font-size:22px;
+margin:8px 0;
+}
+.card p{color:#68736d}
+.price{
+font-weight:bold;
+font-size:19px;
+margin-top:12px;
+}
+
+.about{
+background:#173b2b;
+color:white;
+}
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+.about h2{
+font-family:Georgia,serif;
+font-size:40px;
+margin:15px 0;
+}
+.about p{
+color:#dce6df;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+.contact h2{
+font-family:Georgia,serif;
+font-size:40px;
+margin-bottom:15px;
+}
+.contact p{
+color:#68736d;
+margin:8px 0;
+}
+form{
+display:grid;
+gap:12px;
+}
+input,textarea{
+padding:14px;
+border:1px solid #ddd;
+border-radius:6px;
+font-family:Arial;
+}
+textarea{height:130px}
+
+footer{
+background:#10271d;
+color:#d0d8d3;
+padding:28px 0;
+text-align:center;
+font-size:13px;
+}
+
+.ar{
+font-family:Arial,sans-serif;
+direction:rtl;
+}
+
+@media(max-width:800px){
+nav{display:none}
+.cards{grid-template-columns:1fr}
+.about-grid,.contact{grid-template-columns:1fr}
+.hero{min-height:530px}
+.hero h1{font-size:45px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+OUMNAS
+<span>AGENCE IMMOBILIÈRE</span>
+</div>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#biens">Nos biens</a>
+<a href="#agence">L'agence</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<a class="btn" href="https://wa.me/212657758311">WhatsApp</a>
+
+</div>
+</header>
+
+<section class="hero" id="accueil">
+<div class="container hero-content">
+
+<small>Terrains & Propriétés</small>
+
+<h1>
+Votre projet immobilier commence ici.
+</h1>
+
+<p>
+Agence Immobilière Oumnas vous accompagne dans
+l'achat, la vente et la valorisation de terrains
+et propriétés à Marrakech.
+</p>
+
+<a class="btn" href="#biens">
+Découvrir nos biens
+</a>
+
+</div>
+</section>
+
+<section id="biens">
+<div class="container">
+
+<div class="title">
+<h2>Nos biens</h2>
+<p>Découvrez nos terrains et propriétés disponibles.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<small>Terrain à vendre</small>
+<h3>Terrain constructible</h3>
+<p>📍 Oumnas – Marrakech</p>
+<div class="price">Prix sur demande</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<small>Propriété</small>
+<h3>Villa à Marrakech</h3>
+<p>📍 Marrakech</p>
+<div class="price">Prix sur demande</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<small>Maison</small>
+<h3>Propriété à vendre</h3>
+<p>📍 Région de Marrakech</p>
+<div class="price">Prix sur demande</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="about" id="agence">
+<div class="container about-grid">
+
+<div>
+<small>NOTRE AGENCE</small>
+
+<h2>
+Une agence proche de vous.
+</h2>
+
+<p>
+Agence Immobilière Oumnas – Terrains & Propriétés
+vous accompagne avec sérieux, transparence et
+professionnalisme dans tous vos projets immobiliers.
+</p>
+
+<a class="btn" href="#contact">
+Nous contacter
+</a>
+</div>
+
+<div class="ar">
+<h2>وكالة أومناس العقارية</h2>
+
+<p>
+نرافقكم في شراء وبيع الأراضي والعقارات
+بمراكش ونواحيها، بكل ثقة واحترافية.
+</p>
+
+<p>
+📍 دوار أومناس – مراكش
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+
+<div>
+<small>CONTACT</small>
+
+<h2>
+Parlons de votre projet.
+</h2>
+
+<p>
+Vous cherchez un terrain ou une propriété ?
+Contactez-nous directement.
+</p>
+
+<p>📞 <strong>0657758311</strong></p>
+
+<p>📍 <strong>Douar Oumnas, Marrakech</strong></p>
+
+<br>
+
+<a class="btn" href="https://wa.me/212657758311">
+Contacter sur WhatsApp
+</a>
+</div>
+
+<form>
+<input type="text" placeholder="Votre nom">
+<input type="tel" placeholder="Votre téléphone">
+<input type="email" placeholder="Votre e-mail">
+<textarea placeholder="Votre message"></textarea>
+<button class="btn" type="button">
+Envoyer
+</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+© 2026 Agence Immobilière Oumnas – Terrains & Propriétés
+<br>
+Douar Oumnas, Marrakech · 0657758311
+</footer>
+
+</body>
+</html>
